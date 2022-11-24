@@ -24,13 +24,25 @@ In the first step the root folder for storing raw signal is defined
 
 ## Overview of the software project built in MATLAB <a name="overviewcodes"></a>
 
+
+
+
+Before stating the codes flow, it is mandatory to describe the input files. These are binary files provided by the Licel acquisition system installed on LiMon and in order to process it, a conversion to .TXT format is required and done by Licel software "Advanced Viewer". Then, the resulting file will have the following structure:
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/files_description.PNG" 
+        align="center"
+     	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/files_description.PNG" 
+        width="950" 
+        height="350" 
+        style="display: block; margin: 0 auto" />
+	
 The codes presented in the following flow diagram are saved in this project and are thought to be as autonomous as possible, being developed based on functions that ease the reading of the programs and its execution by the researcher. The built functions are:
 
-- telecover_obtention_profile.m: sdsfl
-- profile_plots.m: sdkjsdk
-- open_files.m: skdjskdj
-- optical_products.m: skdjasdkjaodfjsdfjhlfjhsdfkjahldfkajdlfahdfljahsflddakshdaklsjdañlskdjañsldkasdasdjas
-- calibration_products.m: askdjaskdjaskdjaksdjkasjdkajsd
+- telecover_obtention_profile.m: brief explanation of the function
+- profile_plots.m: brief explanation of the function
+- open_files.m: brief explanation of the function
+- optical_products.m: brief explanation of the function 
+- calibration_products.m: brief explanation of the function
+
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
         align="center"
@@ -38,6 +50,7 @@ The codes presented in the following flow diagram are saved in this project and 
         width="950" 
         height="350" 
         style="display: block; margin: 0 auto" />
+
 
 
 
