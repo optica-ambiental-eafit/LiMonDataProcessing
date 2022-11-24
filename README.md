@@ -4,10 +4,11 @@
 
 # Table of contents
 1. [Overview of the information flux for the LiMon data inversion algorithms](#overview)
-2. [1st and 2nd step: data reading and preprocessing](#title1)
+2. [Overview of the software project built in MATLAB](#overviewcodes)
+3. [1st and 2nd step: data reading and preprocessing](#first_sec)
     1. [Sub paragraph](#subparagraph1)
-3. [3rd step: Klett - Fernald - Sasano Method (KFS)](#title2)
-4. [4th step: depolarization calibration](#title3)
+4. [3rd step: Klett - Fernald - Sasano Method (KFS)](#third)
+5. [4th step: depolarization calibration](#fourth)
 
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
@@ -19,7 +20,25 @@
         height="180" 
         style="display: block; margin: 0 auto" />
 
-Brief explanation of the overview
+In the first step the root folder for storing raw signal is defined 
+
+## Overview of the software project built in MATLAB <a name="overviewcodes"></a>
+
+The codes presented in the following flow diagram are saved in this project and are thought to be as autonomous as possible, being developed based on functions that ease the reading of the programs and its execution by the researcher. The built functions are:
+
+- telecover_obtention_profile.m: sdsfl
+- profile_plots.m: sdkjsdk
+- open_files.m: skdjskdj
+- optical_products.m: skdjasdkjaodfjsdfjhlfjhsdfkjahldfkajdlfahdfljahsflddakshdaklsjdañlskdjañsldkasdasdjas
+- calibration_products.m: askdjaskdjaskdjaksdjkasjdkajsd
+
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
+        align="center"
+     	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
+        width="950" 
+        height="350" 
+        style="display: block; margin: 0 auto" />
+
 
 
 ## 1st and 2nd step: data reading and preprocessing <a name="title1"></a>
