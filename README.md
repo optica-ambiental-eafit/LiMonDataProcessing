@@ -35,6 +35,8 @@ Before stating the codes flow, it is mandatory to describe the input files. Thes
         width="750" 
         height="350" 
         style="display: block; margin: 0 auto" />
+
+Notice that the file name contains the date and time of the measurement, therefore, one can capture those characters in the code for naming date associated variables.
 	
 The codes presented in the following flow diagram are saved in this project and are thought to be as autonomous as possible, being developed based on functions that ease the reading of the programs and its execution by the researcher. The built functions are:
 
