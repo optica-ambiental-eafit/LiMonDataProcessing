@@ -24,11 +24,7 @@ Brief explanation of the overview
 
 ## 1st and 2nd step: data reading and preprocessing <a name="title1"></a>
 
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg" 
-	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
-        width="700" 
-        height="150" 
-        style="display: block; margin: 0 auto" />
+![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg)
 
 	
 ### Sub paragraph <a name="subparagraph1"></a>
