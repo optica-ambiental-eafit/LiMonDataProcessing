@@ -13,8 +13,8 @@
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
 
-![]<img src="[Picture.svg](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg)" 
-        alt="Picture" 
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg" 
+        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg" 
         width="800" 
         height="600" 
         style="display: block; margin: 0 auto" />
