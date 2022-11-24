@@ -35,8 +35,8 @@ This is a sub paragraph, formatted in heading 3 style
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg"
         alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg"
-        width="400" 
-        height="700" 
+        width="800" 
+        height="600" 
         style="display: block; margin: 0 auto" />
 
 Textico:
