@@ -28,7 +28,7 @@ In the first step the root folder for storing raw signal is defined
         align="center"
      	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
         width="850" 
-        height="180" 
+        height="250" 
         style="display: block; margin: 0 auto" />
 
 
