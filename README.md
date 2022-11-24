@@ -16,7 +16,7 @@
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg" 
         align="center"
      	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg" 
-        width="750" 
+        width="850" 
         height="180" 
         style="display: block; margin: 0 auto" />
 
