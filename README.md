@@ -12,10 +12,7 @@
 4. [4th step: depolarization calibration](#title3)
 
 
-------------
-
-
-## Overview of the information flux for the LiMon data inversion algorithms <a name="#overview"></a>
+## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
 ------------
 
 ![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg)
