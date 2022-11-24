@@ -14,7 +14,6 @@
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="#Overview of the information flux for the LiMon data inversion algorithms"></a>
 
 ------------
-
 ![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg)
 
 
