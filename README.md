@@ -2,10 +2,11 @@
 <div style="text-align: justify"> Here are found the data processing algorithms related to LiMon and the technical requirements for their correct execution. The objective of this project is to retrieve aerosol optical properties such as backscattering and extinction coefficients and linear depolarization ratios. This project hosts the processing codes developed until 2022-11-24 . </div>.
 
 # Table of contents
-1. [Overview of the information flux for the LiMon data inversion algorithms](#introduction)
-2. [Some paragraph](#paragraph1)
+1. [Overview of the information flux for the LiMon data inversion algorithms](#overview)
+2. [1st and 2nd step: data reading and preprocessing](#title1)
     1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+3. [3rd step: Klett - Fernald - Sasano Method (KFS)](#title2)
+4. [4th step: depolarization calibration](#title3)
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="#Overview of the information flux for the LiMon data inversion algorithms"></a>
 
@@ -14,14 +15,32 @@
 
 Some introduction text, formatted in heading 2 style
 
-## Some paragraph <a name="paragraph1"></a>
+## 1st and 2nd step: data reading and preprocessing <a name="title1"></a>
+
+------------
+
+
 The first paragraph text
 
 ### Sub paragraph <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
 
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
+## 3rd step: Klett - Fernald - Sasano Method (KFS) <a name="title2"></a>
+
+Textico:
+**The Cauchy-Schwarz Inequality**
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+
+## 4th step: depolarization calibration <a name="title3"></a>
+
+
+------------
+
+
+------------
+
 
 
 # LiMon Hardware
@@ -33,29 +52,6 @@ The second paragraph text
 
 
 
-
-
-------------
-
-
-Textico
-
-# 1st and 2nd step: data reading and preprocessing
-
-------------
-
-
-
-Textico
-
-# 3rd step: Klett - Fernald - Sasano Method (KFS)
-
-------------
-
-Textico:
-**The Cauchy-Schwarz Inequality**
-
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 # 4th step: depolarization calibration
 
