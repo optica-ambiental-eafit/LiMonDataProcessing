@@ -4,7 +4,7 @@
 <img src="https://github.com/optica-ambiental-eafit/LiMon_4DAIR_Data_Processing_Algorithms/blob/main/experimento.jpeg" 
         align="center"
      	alt="https://github.com/optica-ambiental-eafit/LiMon_4DAIR_Data_Processing_Algorithms/blob/main/experimento.jpeg" 
-        width="850" 
+        width="250" 
         height="180" 
         style="display: block; margin: 0 auto" />
 
