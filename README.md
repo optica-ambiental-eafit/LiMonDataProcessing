@@ -31,7 +31,7 @@ Before stating the codes flow, it is mandatory to describe the input files. Thes
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/files_description.PNG" 
         align="center"
      	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/files_description.PNG" 
-        width="950" 
+        width="800" 
         height="350" 
         style="display: block; margin: 0 auto" />
 	
