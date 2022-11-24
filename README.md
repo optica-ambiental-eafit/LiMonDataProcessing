@@ -1,19 +1,5 @@
-# LiMonDataProcessing
-Here are saved the data processing codes
-
 # LiMon_4DAIR_Data_Processing_Algorithms
-
-<div style="text-align: justify"> Here are found the data processing algorithms related to LiMon and the technical requirements for their correct execution. The objective of this project is to retrieve aerosol optical properties such as backscattering and extinction coefficients and linear depolarization ratios. This project hosts the processing codes developed until 2022-11-24 . </div> 
-
-
-
-# LiMon
-
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-![](https://github.com/optica-ambiental-eafit/LiMon_4DAIR_Data_Processing_Algorithms/blob/main/experimento.jpeg)
-
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
-
+<div style="text-align: justify"> Here are found the data processing algorithms related to LiMon and the technical requirements for their correct execution. The objective of this project is to retrieve aerosol optical properties such as backscattering and extinction coefficients and linear depolarization ratios. This project hosts the processing codes developed until 2022-11-24 . </div>.
 
 **Table of Contents**
 
@@ -21,29 +7,44 @@ Here are saved the data processing codes
 
 [TOC]
 
-#H1 header
-##H2 header
-###H3 header
-####H4 header
-#####H5 header
-######H6 header
-#Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-##Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-###Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-####Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
-#####Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-######Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
 
-##Headers (Underline)
+# LiMon Hardware
 
-H1 Header (Underline)
-=============
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/optica-ambiental-eafit/LiMon_4DAIR_Data_Processing_Algorithms/blob/main/experimento.jpeg)
 
-H2 Header (Underline)
--------------
+![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
-###Characters
-                
+
+
+#Overview of the information flux for the LiMon data inversion algorithms
+
+------------
+
+
+Textico
+
+# 1st and 2nd step: data reading and preprocessing
+
+------------
+
+
+
+Textico
+
+# 3rd step: Klett - Fernald - Sasano Method (KFS)
+
+------------
+
+Textico:
+**The Cauchy-Schwarz Inequality**
+
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+# 4th step: depolarization calibration
+
+Textico
+
 ----
 
 ~~Strikethrough~~ <s>Strikethrough (when enable html tag decode.)</s>
