@@ -31,7 +31,6 @@ This is a sub paragraph, formatted in heading 3 style
 
 ## 3rd step: Klett - Fernald - Sasano Method (KFS) <a name="title2"></a>
 
-![]()
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg](https://github.com/optica-ambiental-	   	   eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg" 
 	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg](https://github.com/optica-ambiental-		eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg" 
         width="700" 
