@@ -1,12 +1,6 @@
 # LiMon_4DAIR_Data_Processing_Algorithms
 <div style="text-align: justify"> Here are found the data processing algorithms related to LiMon and the technical requirements for their correct execution. The objective of this project is to retrieve aerosol optical properties such as backscattering and extinction coefficients and linear depolarization ratios. This project hosts the processing codes developed until 2022-11. </div>
 
-<img src="https://github.com/optica-ambiental-eafit/LiMon_4DAIR_Data_Processing_Algorithms/blob/main/experimento.jpeg" 
-        align="center"
-     	alt="https://github.com/optica-ambiental-eafit/LiMon_4DAIR_Data_Processing_Algorithms/blob/main/experimento.jpeg" 
-        width="250" 
-        height="180" 
-        style="display: block; margin: 0 auto" />
 
 # Table of contents
 1. [Overview of the information flux for the LiMon data inversion algorithms](#overview)
