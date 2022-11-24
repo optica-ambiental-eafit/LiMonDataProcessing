@@ -1,8 +1,8 @@
 # LiMon_4DAIR_Data_Processing_Algorithms
-<div style="text-align: justify"> Here are found the data processing algorithms related to LiMon and the technical requirements for their correct execution. The objective of this project is to retrieve aerosol optical properties such as backscattering and extinction coefficients and linear depolarization ratios. This project hosts the processing codes developed until 2022-11-24 . </div>.
+<div style="text-align: justify"> Here are found the data processing algorithms related to LiMon and the technical requirements for their correct execution. The objective of this project is to retrieve aerosol optical properties such as backscattering and extinction coefficients and linear depolarization ratios. This project hosts the processing codes developed until 2022-11. </div>
 
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
 ![](https://github.com/optica-ambiental-eafit/LiMon_4DAIR_Data_Processing_Algorithms/blob/main/experimento.jpeg)
-
 
 # Table of contents
 1. [Overview of the information flux for the LiMon data inversion algorithms](#overview)
@@ -11,25 +11,28 @@
 3. [3rd step: Klett - Fernald - Sasano Method (KFS)](#title2)
 4. [4th step: depolarization calibration](#title3)
 
-## Overview of the information flux for the LiMon data inversion algorithms <a name="#Overview of the information flux for the LiMon data inversion algorithms"></a>
 
 ------------
+
+
+## Overview of the information flux for the LiMon data inversion algorithms <a name="#overview"></a>
+------------
+
 ![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg)
 
+Brief explanation of the overview
 
-Some introduction text, formatted in heading 2 style
 
 ## 1st and 2nd step: data reading and preprocessing <a name="title1"></a>
-
 ------------
-
-
-The first paragraph text
+![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg)
 
 ### Sub paragraph <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
 
 ## 3rd step: Klett - Fernald - Sasano Method (KFS) <a name="title2"></a>
+------------
+![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg)
 
 Textico:
 **The Cauchy-Schwarz Inequality**
@@ -49,8 +52,7 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 # LiMon Hardware
 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
-![](https://github.com/optica-ambiental-eafit/LiMon_4DAIR_Data_Processing_Algorithms/blob/main/experimento.jpeg)
+
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
