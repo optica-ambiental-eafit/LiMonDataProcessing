@@ -12,7 +12,6 @@
 
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
-------------
 
 ![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg)
 
@@ -20,14 +19,14 @@ Brief explanation of the overview
 
 
 ## 1st and 2nd step: data reading and preprocessing <a name="title1"></a>
-------------
+
 ![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg)
 
 ### Sub paragraph <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
 
 ## 3rd step: Klett - Fernald - Sasano Method (KFS) <a name="title2"></a>
-------------
+
 ![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg)
 
 Textico:
