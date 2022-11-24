@@ -24,6 +24,14 @@ In the first step the root folder for storing raw signal is defined
 
 ## Overview of the software project built in MATLAB <a name="overviewcodes"></a>
 
+The codes presented in the following flow diagram are saved in this project and are thought to be as autonomous as possible, being developed based on functions that ease the reading of the programs and its execution by the researcher. The built functions are:
+
+- telecover_obtention_profile.m: sdsfl
+- profile_plots.m: sdkjsdk
+- open_files.m: skdjskdj
+- optical_products.m: skdjasdkjaodfjsdfjhlfjhsdfkjahldfkajdlfahdfljahsflddakshdaklsjdañlskdjañsldkasdasdjas
+- calibration_products.m: askdjaskdjaskdjaksdjkasjdkajsd
+
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
         align="center"
      	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
