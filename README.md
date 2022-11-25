@@ -60,7 +60,7 @@ The codes presented in the following flow diagram are saved in this project and 
 ## 1st and 2nd step: data reading and preprocessing <a name="title1"></a>
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
         alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
-        width="750" 
+        width="450" 
         height="500" 
         style="display: block; margin: 0 auto" />
 	
