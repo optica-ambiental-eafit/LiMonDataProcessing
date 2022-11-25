@@ -58,9 +58,11 @@ The codes presented in the following flow diagram are saved in this project and 
 
 
 ## 1st and 2nd step: data reading and preprocessing <a name="title1"></a>
-
-![](https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg)
-
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
+        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
+        width="750" 
+        height="500" 
+        style="display: block; margin: 0 auto" />
 	
 ### Sub paragraph <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
