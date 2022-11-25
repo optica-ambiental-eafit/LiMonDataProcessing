@@ -50,7 +50,7 @@ The codes presented in the following flow diagram are saved in this project and 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
         align="center"
      	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
-        width="950" 
+        width="1100"
         height="350" 
         style="display: block; margin: 0 auto" />
 
