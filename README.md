@@ -44,7 +44,7 @@ The codes presented in the following flow diagram are saved in this project and 
 - profile_plots.m: allows to plot the signal profiles individually or all together as subplots in a figure, depending on user's request.
 - open_files.m: takes a directory path and returns the files name for then capturing the date and time of the measurement.
 - optical_products.m: plots the backscattering and extinction coefficients after being computed by **KFS_code.m**. Asks the user how many profiles wants to retrieve and their associated time intervals for integration.
-- calibration_products.m: opens calibration data and computes the $$\Delta 90$$ gain ratio for finally calculating the particle and volume depolarization ratios.
+- calibration_products.m: opens calibration data and computes the $\Delta 90$ gain ratio for finally calculating the particle and volume depolarization ratios.
 
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
