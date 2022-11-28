@@ -40,11 +40,11 @@ Notice that the file name contains the date and time of the measurement, therefo
 	
 The codes presented in the following flow diagram are saved in this project and are thought to be as autonomous as possible, being developed based on functions that ease the reading of the programs and its execution by the researcher. The built functions are:
 
-- telecover_obtention_profile.m: brief explanation of the function
-- profile_plots.m: brief explanation of the function
-- open_files.m: brief explanation of the function
-- optical_products.m: brief explanation of the function 
-- calibration_products.m: brief explanation of the function
+- telecover_obtention_profile.m: this code aims to read telecover data and plot its profiles for each channel and can be executed in the field in order to check the alignment quality nimbly.
+- profile_plots.m: allows to plot the signal profiles individually or all together as subplots in a figure, depending on user's request.
+- open_files.m: takes a directory path and returns the files name for then capturing the date and time of the measurement.
+- optical_products.m: plots the backscattering and extinction coefficients after being computed by **KFS_code.m**. Asks the user how many profiles wants to retrieve and their associated time intervals for integration.
+- calibration_products.m: opens calibration data and computes the $$\Delta 90$$ gain ratio for finally calculating the particle and volume depolarization ratios.
 
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
