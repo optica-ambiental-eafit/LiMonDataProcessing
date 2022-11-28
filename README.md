@@ -54,7 +54,7 @@ The **KFS_code.m** and **quicklook_code.m** routines are the main codes of the p
 
 ## 1st and 2nd step: data reading and preprocessing <a name="first_sec"></a>
 
-The raw data used for obtaining the optical properties of aerosols is read in the first step performed by **quicklook_code.m** after defining the day, month and year of the measurements of interest. This code has the Dark Current (DC) filter implemented and if the user realizes that the signal does not tend to null values, then background correction can be done from 6800 m (Rayligh's fit performed by M.Hoyos(2022)). About trigger delay correction, it was concluded by M.Hoyos(2022) that the data has an offset of 29 bins. Finally the filtered signal $P(R)$ is range corrected multiplied by the height squared and is plotted as a color scaled image (quicklook). It is noteworthy that the program includes some smoothing data techniques that aim to reduce color saturation such as linear regression or gaussian weighted moving average (this have to be choose by the user in the source code).
+The raw data used for obtaining the optical properties of aerosols is read in the first step performed by **quicklook_code.m** after defining the day, month and year of the measurements of interest. This code has the Dark Current (DC) filter implemented and if the user realizes that the signal does not tend to null values, then background correction can be done from 6800 m (Rayligh's fit performed by M.Hoyos(2022)). About trigger delay correction, it was concluded by M.Hoyos(2022) that the data has an offset of 29 bins. Finally the filtered signal $P(R)$ is range corrected multiplied by the height squared and is plotted as a color scaled image (quicklook - $RCS(R)$). It is noteworthy that the program includes some smoothing data techniques that aim to reduce color saturation such as linear regression or gaussian weighted moving average (this have to be choose by the user in the source code).
 
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
@@ -77,14 +77,32 @@ In order to perform mathematical data inversion by KFS executing **KFS_code.m**,
         style="display: block; margin: 0 auto" />
 
 Textico:
-**The Cauchy-Schwarz Inequality**
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+**KFS method basics**
 
+After running **molecular.m**, one can proceed to evaluate the following expressions:
+
+- $$\beta_{aer} = -\beta_{mol} + \frac{factor1}{factor2}$$
+- $$factor_1 = RCS(R) \beta(R_0) exp\left(-2\int_{R_0}^{R} [LR_{aer}(r) - LR_{mol}]\beta_{mol}(r) dr]\right)$$
+- $$factor_2 = RCS(R_0) - 2\beta(R_0)\int_{R_0}^{R}LR_{aer}(r)RCS(r)exp\left[\left(-2\int_{R_0}^{r} [LR_{aer}(r') - LR_{mol}]\beta_{mol}(r')dr'\right)\right]dr$$
+
+where $R_0$ is the reference height obtained with the Rayleigh fit.
+This factors are calculated for each file and the function **optical_products.m** is called for the plotting of the integrated profiles.
 
 ## 4th step: depolarization calibration <a name="fourth"></a>
 
+If calibration data is available, **calibration_products.m** performs the calculations as follows:
 
+- $$\eta*(\Psi) = \frac{I_R(\Psi)}{I_T(\Psi)}$$
+- $$\eta_{\Delta 90} = \frac{\sqrt{\eta*(+45°+\epsilon)\eta*(-45°+\epsilon)}}{K}$$
+
+
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/calibration_flux_diagram.PNG"
+        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/calibration_flux_diagram.PNG"
+        width="650" 
+        height="450" 
+        style="display: block; margin: 0 auto" />
+	
 ------------
 
 
