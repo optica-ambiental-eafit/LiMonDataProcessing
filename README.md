@@ -24,9 +24,6 @@ In the first step the root folder for storing raw signal is defined
 
 ## Overview of the software project built in MATLAB <a name="overviewcodes"></a>
 
-
-
-
 Before stating the codes flow, it is mandatory to describe the input files. These are binary files provided by the Licel acquisition system installed on LiMon and in order to process it, a conversion to .TXT format is required and done by Licel software "Advanced Viewer". Then, the resulting file will have the following structure:
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/files_description.PNG" 
@@ -46,7 +43,6 @@ The codes presented in the following flow diagram are saved in this project and 
 - **optical_products.m:** plots the backscattering and extinction coefficients after being computed by **KFS_code.m**. Asks the user how many profiles wants to retrieve and their associated time intervals for integration.
 - **calibration_products.m:** opens calibration data and computes the $\Delta 90$ gain ratio for finally calculating the particle and volume depolarization ratios.
 
-
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
         align="center"
      	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
@@ -54,10 +50,12 @@ The codes presented in the following flow diagram are saved in this project and 
         height="350" 
         style="display: block; margin: 0 auto" />
 
+The **KFS_code.m** and **quicklook_code.m** routines are the main codes of the project and will be adressed in the following section.
+
+## 1st and 2nd step: data reading and preprocessing 
 
 
 
-## 1st and 2nd step: data reading and preprocessing <a name="title1"></a>
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
         alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
         width="450" 
