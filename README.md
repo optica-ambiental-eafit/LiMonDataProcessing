@@ -68,7 +68,7 @@ This is a sub paragraph, formatted in heading 3 style
 
 ## 3rd step: Klett - Fernald - Sasano Method (KFS) <a name="third"></a>
 
-In order to perform mathematical data inversion by KFS executing **KFS_code.m**, the molecular Lidar Ratio and the molecular backscattering coefficient have to be well characterized at 532 nm for the local atmosphere with radiosounding, nevertheless, since 4DAIR project does not have the means to do so yet, a .TXT file of pressure and temperature profiles for a standard atmosphere model is read. Inside **KFS_code.m**, the function **molecular.m** (developed by H.M.J Barbosa, B.Barja and R.Costa) is implemented and retrieves $LR_mol_{532 nm}$ and $\beta_{mol_532 nm}$.
+In order to perform mathematical data inversion by KFS executing **KFS_code.m**, the molecular Lidar Ratio and the molecular backscattering coefficient have to be well characterized at 532 nm for the local atmosphere with radiosounding, nevertheless, since 4DAIR project does not have the means to do so yet, a .TXT file of pressure and temperature profiles for a standard atmosphere model is read. Inside **KFS_code.m**, the function **molecular.m** (developed by H.M.J Barbosa, B.Barja and R.Costa) is implemented and retrieves $LR_{mol}$ and $\beta_{mol}$.
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg"
         alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg"
