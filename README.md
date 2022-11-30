@@ -10,7 +10,7 @@
 4. [3rd step: Klett - Fernald - Sasano Method (KFS)](#third)
 5. [4th step: depolarization calibration](#fourth)
 6. [Telecover technique for overlap characterization](#telecover)
-    1. [Sub_paragraph](#overlapcondition)
+    1. [Overlap condition](#overlapcondition)
 
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
@@ -18,11 +18,10 @@
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg" 
         align="center"
      	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg" 
-        width="700" 
+        width="800" 
         height="180" 
         style="display: block; margin: 0 auto" />
 
-In the first step the root folder for storing raw signal is defined 
 
 ## Overview of the software project built in MATLAB <a name="overviewcodes"></a>
 
@@ -93,8 +92,13 @@ This factors are calculated for each file and the function **optical_products.m*
 
 When the code computes the value of $\beta_{aer}$, then it calculates extinction $\alpha_{aer}$ from the linear dependence stablished through the aerosol Lidar ratio $LR_{aer}$ which value for Medellin is 61 sr and it is decision of the user which quantity display with the aid of the next menus:
 
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/menu_profiles.PNG"
+        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/menu_profiles.PNG"
+        width="500" 
+        height="350" 
+        style="display: block; margin: 0 auto" />
 
-
+*It is noteworthy that the user **must be aware** of the time associated to the files that will enumerate in the menus*.
 
 ## 4th step: depolarization calibration <a name="fourth"></a>
 
