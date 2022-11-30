@@ -9,6 +9,8 @@
     1. [Sub paragraph](#subparagraph1)
 4. [3rd step: Klett - Fernald - Sasano Method (KFS)](#third)
 5. [4th step: depolarization calibration](#fourth)
+6. [Telecover technique for overlap characterization](#telecover)
+    1. [Sub_paragraph](#overlapcondition)
 
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
@@ -54,7 +56,7 @@ The **KFS_code.m** and **quicklook_code.m** routines are the main codes of the p
 
 ## 1st and 2nd step: data reading and preprocessing <a name="first_sec"></a>
 
-The raw data used for obtaining the optical properties of aerosols is read in the first step performed by **quicklook_code.m** after defining the day, month and year of the measurements of interest. This code has the Dark Current (DC) filter implemented and if the user realizes that the signal does not tend to null values, then background correction can be done from 6800 m (Rayligh's fit performed by M.Hoyos(2022)). About trigger delay correction, it was concluded by M.Hoyos(2022) that the data has an offset of 29 bins. Finally the filtered signal $P(R)$ is range corrected multiplied by the height squared and is plotted as a color scaled image (quicklook - $RCS(R)$). It is noteworthy that the program includes some smoothing data techniques that aim to reduce color saturation such as linear regression or gaussian weighted moving average (this have to be choose by the user in the source code).
+The raw data used for obtaining the optical properties of aerosols is read in the first step performed by **quicklook_code.m** after defining the day, month and year of the measurements of interest. This code has the Dark Current (DC) filter implemented and if the user realizes that the signal does not tend to null values, then background correction can be done from 6800 m (Rayligh's fit performed by M.Hoyos(2022)). About trigger delay correction, it was concluded by M.Hoyos(2022) that the data has an offset of 29 bins. Finally the filtered signal $P(R)$ is range corrected multiplied by the height squared and is plotted as a color scaled image (quicklook  $RCS(R)$ ). It is noteworthy that the program includes some smoothing data techniques that aim to reduce color saturation such as linear regression or gaussian weighted moving average (this have to be choose by the user in the source code).
 
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
@@ -89,9 +91,14 @@ After running **molecular.m**, one can proceed to evaluate the following express
 where $R_0$ is the reference height obtained with the Rayleigh fit.
 This factors are calculated for each file and the function **optical_products.m** is called for the plotting of the integrated profiles.
 
+When the code computes the value of $\beta_{aer}$, then it calculates extinction $\alpha_{aer}$ from the linear dependence stablished through the aerosol Lidar ratio $LR_{aer}$ which value for Medellin is 61 sr and it is decision of the user which quantity display with the aid of the next menus:
+
+
+
+
 ## 4th step: depolarization calibration <a name="fourth"></a>
 
-If calibration data is available, **calibration_products.m** performs the calculations as follows:
+The variables taken into account in **calibration_products.m** are the following:
 
 - $\eta*(\Psi)$: apparent calibration factor at angle $\Psi$.
 - $I_R(\Psi)$: light intensity at channel 1.
@@ -101,10 +108,11 @@ If calibration data is available, **calibration_products.m** performs the calcul
 - $G_T = G_R = H_R = H_T = 1$: crosstalk parameters.
 - $\delta_v*$: apparent volume linear depolarization ratio.
 - $\delta_v$: volume linear depolarization ratio.
-- $\R$: backscatter ratio.
+- $R$: backscatter ratio.
 - $\delta_{pmol}$: molecular depolarization ratio.
 - $\delta_p$: particle depolarization ratio.
-- $$\eta_{\Delta 90} = \frac{\sqrt{\eta*(+45°+\epsilon)\eta*(-45°+\epsilon)}}{K}$$
+
+which domine the equations shown in the workflow:
 
 
 <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/calibration_flux_diagram.PNG"
@@ -112,7 +120,15 @@ If calibration data is available, **calibration_products.m** performs the calcul
         width="650" 
         height="450" 
         style="display: block; margin: 0 auto" />
-	
+
+## Telecover technique for overlap characterization <a name="telecover"></a>
+
+If the laser is misaligned, a telecover must be carried out for assuring the quality of the measurements. The code **telecover_obtention_profile.m** evaluates the signal registered when each one of the channels were covered and can be executed in the field to check if the overlap condition is satisfied.
+
+### Overlap condition: <a name="overlapcondition"></a>
+
+$$ North(1A) = North(1B) < East(2) = West (3) < South(4)$$
+
 ------------
 
 
