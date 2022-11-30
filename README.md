@@ -94,7 +94,16 @@ This factors are calculated for each file and the function **optical_products.m*
 If calibration data is available, **calibration_products.m** performs the calculations as follows:
 
 - $\eta*(\Psi)$: apparent calibration factor at angle $\Psi$.
-- $$\eta*(\Psi) = \frac{I_R(\Psi)}{I_T(\Psi)}$$
+- $I_R(\Psi)$: light intensity at channel 1.
+- $I_T(\Psi)$: light intensity at channel 0.
+- $\epsilon$: error associated to the polarizer misalignment.
+- $\eta_{\Delta 90}$: calibration factor with $K = 1$.
+- $G_T = G_R = H_R = H_T = 1$: crosstalk parameters.
+- $\delta_v*$: apparent volume linear depolarization ratio.
+- $\delta_v$: volume linear depolarization ratio.
+- $\R$: backscatter ratio.
+- $\delta_{pmol}$: molecular depolarization ratio.
+- $\delta_p$: particle depolarization ratio.
 - $$\eta_{\Delta 90} = \frac{\sqrt{\eta*(+45°+\epsilon)\eta*(-45°+\epsilon)}}{K}$$
 
 
