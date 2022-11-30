@@ -93,6 +93,7 @@ This factors are calculated for each file and the function **optical_products.m*
 
 If calibration data is available, **calibration_products.m** performs the calculations as follows:
 
+- $\eta*(\Psi)$: apparent calibration factor at angle $\Psi$.
 - $$\eta*(\Psi) = \frac{I_R(\Psi)}{I_T(\Psi)}$$
 - $$\eta_{\Delta 90} = \frac{\sqrt{\eta*(+45°+\epsilon)\eta*(-45°+\epsilon)}}{K}$$
 
