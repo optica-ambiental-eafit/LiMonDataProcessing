@@ -77,7 +77,6 @@ In order to perform mathematical data inversion by KFS executing **KFS_code.m**,
         height="600" 
         style="display: block; margin: 0 auto" />
 
-Textico:
 
 **KFS method basics**
 
