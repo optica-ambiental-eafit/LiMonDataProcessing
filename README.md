@@ -58,8 +58,8 @@ The **KFS_code.m** and **quicklook_code.m** routines are the main codes of the p
 The raw data used for obtaining the optical properties of aerosols is read in the first step performed by **quicklook_code.m** after defining the day, month and year of the measurements of interest. This code has the Dark Current (DC) filter implemented and if the user realizes that the signal does not tend to null values, then background correction can be done from 6800 m (Rayligh's fit performed by M.Hoyos(2022)). About trigger delay correction, it was concluded by M.Hoyos(2022) that the data has an offset of 29 bins. Finally the filtered signal $P(R)$ is range corrected multiplied by the height squared and is plotted as a color scaled image (quicklook  $RCS(R)$ ). It is noteworthy that the program includes some smoothing data techniques that aim to reduce color saturation such as linear regression or gaussian weighted moving average (this have to be choose by the user in the source code).
 
 
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
-        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_PRE.svg"
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg"
+        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg"
         width="450" 
         height="500" 
         style="display: block; margin: 0 auto" />
@@ -71,8 +71,8 @@ This is a sub paragraph, formatted in heading 3 style
 
 In order to perform mathematical data inversion by KFS executing **KFS_code.m**, the molecular Lidar Ratio and the molecular backscattering coefficient have to be well characterized at 532 nm for the local atmosphere with radiosounding, nevertheless, since 4DAIR project does not have the means to do so yet, a .TXT file of pressure and temperature profiles for a standard atmosphere model is read. Inside **KFS_code.m**, the function **molecular.m** (developed by H.M.J Barbosa, B.Barja and R.Costa) is implemented and retrieves $LR_{mol}$ and $\beta_{mol}$.
 
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg"
-        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Procesamiento%20diagrama%20de%20flujo_KFS.svg"
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow_inversion.svg"
+        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow_inversion.svg"
         width="800" 
         height="600" 
         style="display: block; margin: 0 auto" />
@@ -118,10 +118,10 @@ The variables taken into account in **calibration_products.m** are the following
 which domine the equations shown in the workflow:
 
 
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/calibration_flux_diagram.PNG"
-        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/calibration_flux_diagram.PNG"
+<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Calibration%20workflow.svg"
+        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Calibration%20workflow.svg"
         width="650" 
-        height="450" 
+        height="580" 
         style="display: block; margin: 0 auto" />
 
 ## Telecover technique for overlap characterization <a name="telecover"></a>
