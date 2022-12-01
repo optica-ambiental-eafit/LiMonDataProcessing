@@ -15,24 +15,23 @@
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
 
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg" 
-        align="center"
-     	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_KFS.svg" 
-        width="800" 
-        height="180" 
-        style="display: block; margin: 0 auto" />
+
+<p align="center">
+  <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_general.svg" 
+   width="860" 
+   height="150" />
+</p>
 
 
 ## Overview of the software project built in MATLAB <a name="overviewcodes"></a>
 
 Before stating the codes flow, it is mandatory to describe the input files. These are binary files provided by the Licel acquisition system installed on LiMon and in order to process it, a conversion to .TXT format is required and done by Licel software "Advanced Viewer". Then, the resulting file will have the following structure:
-
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/files_description.PNG" 
-        align="center"
-     	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/files_description.PNG" 
-        width="750" 
-        height="350" 
-        style="display: block; margin: 0 auto" />
+	
+<p align="center">
+  <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/files_description.PNG" 
+   width="750" 
+   height="350" />
+</p>
 
 Notice that the file name contains the date and time of the measurement, therefore, one can capture those characters in the code for naming date associated variables.
 	
@@ -44,12 +43,13 @@ The codes presented in the following flow diagram are saved in this project and 
 - **optical_products.m:** plots the backscattering and extinction coefficients after being computed by **KFS_code.m**. Asks the user how many profiles wants to retrieve and their associated time intervals for integration.
 - **calibration_products.m:** opens calibration data and computes the $\Delta 90$ gain ratio for finally calculating the particle and volume depolarization ratios.
 
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
-        align="center"
-     	alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
-        width="1100"
-        height="350" 
-        style="display: block; margin: 0 auto" />
+	
+<p align="center">
+  <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Flujo_Lidar_codes.svg" 
+   width="1100" 
+   height="250" />
+</p>
+
 
 The **KFS_code.m** and **quicklook_code.m** routines are the main codes of the project and will be adressed in the following section.
 
@@ -57,12 +57,12 @@ The **KFS_code.m** and **quicklook_code.m** routines are the main codes of the p
 
 The raw data used for obtaining the optical properties of aerosols is read in the first step performed by **quicklook_code.m** after defining the day, month and year of the measurements of interest. This code has the Dark Current (DC) filter implemented and if the user realizes that the signal does not tend to null values, then background correction can be done from 6800 m (Rayligh's fit performed by M.Hoyos(2022)). About trigger delay correction, it was concluded by M.Hoyos(2022) that the data has an offset of 29 bins. Finally the filtered signal $P(R)$ is range corrected multiplied by the height squared and is plotted as a color scaled image (quicklook  $RCS(R)$ ). It is noteworthy that the program includes some smoothing data techniques that aim to reduce color saturation such as linear regression or gaussian weighted moving average (this have to be choose by the user in the source code).
 
+<p align="center">
+  <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg" 
+   width="450" 
+   height="500" />
+</p>
 
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg"
-        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg"
-        width="450" 
-        height="500" 
-        style="display: block; margin: 0 auto" />
 	
 ### Sub paragraph <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
@@ -71,11 +71,11 @@ This is a sub paragraph, formatted in heading 3 style
 
 In order to perform mathematical data inversion by KFS executing **KFS_code.m**, the molecular Lidar Ratio and the molecular backscattering coefficient have to be well characterized at 532 nm for the local atmosphere with radiosounding, nevertheless, since 4DAIR project does not have the means to do so yet, a .TXT file of pressure and temperature profiles for a standard atmosphere model is read. Inside **KFS_code.m**, the function **molecular.m** (developed by H.M.J Barbosa, B.Barja and R.Costa) is implemented and retrieves $LR_{mol}$ and $\beta_{mol}$.
 
-<img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow_inversion.svg"
-        alt="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow_inversion.svg"
-        width="800" 
-        height="600" 
-        style="display: block; margin: 0 auto" />
+<p align="center">
+  <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow_inversion.svg" 
+   width="800" 
+   height="600" />
+</p>
 
 
 **KFS method basics**
