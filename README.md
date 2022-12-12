@@ -24,8 +24,25 @@ Download for Windows 64 bits here: https://desktop.github.com/. Once it is insta
 
 ### Clone the repository <a name="cloning"></a>
 
-First, a file called "Github" must be created in the local disc of the computer you are going to work with, path is suggested.
+Before cloning, a folder called "Github" must be created in the local disc of the computer you are going to work with (C:\User\Desktop path is suggested). Here is were you are goint to "Pull down" your repo, from remote GitHub to local. In this folder, a local copy of the repository will be created and a sync between both locations will be stablished.
 
+Follow this steps for cloning:
+- Navigate to https://github.com/optica-ambiental-eafit/LiMonDataProcessing.
+- Click **Code** button.
+<p align="center">
+  <img src="https://github.com/optica-ambiental-   	eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg" 
+   width="450" 
+   height="500" />
+</p>
+- Copy the URL for the repository.
+Select **HTTPS** option and copy the link generated below.
+<p align="center">
+  <img src="https://github.com/optica-ambiental-   	eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg" 
+   width="450" 
+   height="500" />
+</p>
+- Open **GitHub Desktop** in your computer and press "CTRL + Shift + O" for cloning. Select **URL** option and paste the link in the bar displayed. Then, write down the local path previously created.
+- Finally, the codes are in your computer and you can edit them while changes are sync with the repository! :D. Please, copy and paste this codes to an independent folder in order to have a backup.
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
 
