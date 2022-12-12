@@ -44,9 +44,28 @@ Follow this steps for cloning:
 </p>
 
 - Open **GitHub Desktop** in your computer and press "CTRL + Shift + O" for cloning. Select **URL** option and paste the link in the bar displayed. Then, write down the local path previously created.
+
+<p align="center">
+  <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/tuto_cloning3.PNG" 
+   width="390" 
+   height="250" />
+</p>
+
 - Finally, the codes are in your computer and you can edit them while changes are sync with the repository! :D. Please, copy and paste this codes to an independent folder in order to have a backup.
 
 *This brief tutorial was written based on the one contained here: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository.*
+
+### Folder and file names <a name="folders"></a>
+
+In order to facilitate the task of processing LiMon data, the following methodology for assigning names to the folder is recommended.
+
+- If normal measurements are performed: C:\User\Authorized_OneDrive\YEAR\MONTH\DAY\RS
+- Dark current measurements: C:\User\Authorized_OneDrive\YEAR\MONTH\DAY\DC
+- Telecover: C:\User\Authorized_OneDrive\YEAR\MONTH\DAY\TC\Qi
+Where i stands for 1A: north A, 1B: north B, 2: east , 3: west, 4: south.
+- Calibration: C:\User\Authorized_OneDrive\YEAR\MONTH\DAY\Calib\t45
+where t could be P for Positive and M for Minus.
+
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
 
@@ -169,7 +188,6 @@ $$ North(1A) = North(1B) < East(2) = West (3) < South(4)$$
 
 
 ------------
-
 
 
 # LiMon Hardware
