@@ -30,17 +30,19 @@ Follow this steps for cloning:
 - Navigate to https://github.com/optica-ambiental-eafit/LiMonDataProcessing.
 - Click **Code** button.
 <p align="center">
-  <img src="https://github.com/optica-ambiental-   	eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg" 
+  <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/tuto_cloning1.PNG" 
    width="450" 
-   height="500" />
+   height="200" />
 </p>
 - Copy the URL for the repository.
 Select **HTTPS** option and copy the link generated below.
+
 <p align="center">
-  <img src="https://github.com/optica-ambiental-   	eafit/LiMonDataProcessing/blob/main/Local%20figures/Depolarization%20Scanning%20lidar%20workflow.svg" 
-   width="450" 
-   height="500" />
+  <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/tuto_cloning2.PNG" 
+   width="390" 
+   height="200" />
 </p>
+
 - Open **GitHub Desktop** in your computer and press "CTRL + Shift + O" for cloning. Select **URL** option and paste the link in the bar displayed. Then, write down the local path previously created.
 - Finally, the codes are in your computer and you can edit them while changes are sync with the repository! :D. Please, copy and paste this codes to an independent folder in order to have a backup.
 
