@@ -2,15 +2,29 @@
 
 Here are found the data processing algorithms related to LiMon and the technical requirements for their correct execution. The objective of this project is to  retrieve aerosol optical properties such as backscattering and extinction coefficients and linear depolarization ratios. This project hosts the processing codes developed until 2022-11.
 
-
 # Table of contents
-1. [Overview of the information flux for the LiMon data inversion algorithms](#overview)
-2. [Overview of the software project built in MATLAB](#overviewcodes)
-3. [1st and 2nd step: data reading and preprocessing](#first_sec)
-4. [3rd step: Klett - Fernald - Sasano Method (KFS)](#third)
-5. [4th step: depolarization calibration](#fourth)
-6. [Telecover technique for overlap characterization](#telecover)
+1. [How to use the repository](#howtorepo)
+    1. [Download GitHub Desktop](#howtodownload) 
+    2. [Clone the repository](#cloning)
+    3. [Folder and file names](#folders)
+2. [Overview of the information flux for the LiMon data inversion algorithms](#overview)
+3. [Overview of the software project built in MATLAB](#overviewcodes)
+4. [1st and 2nd step: data reading and preprocessing](#first_sec)
+5. [3rd step: Klett - Fernald - Sasano Method (KFS)](#third)
+6. [4th step: depolarization calibration](#fourth)
+7. [Telecover technique for overlap characterization](#telecover)
     1. [Overlap condition](#overlapcondition)
+
+## How to use the repository <a name="howtorepo"></a>
+The repo is contained in https://github.com/optica-ambiental-eafit/LiMonDataProcessing but can be cloned to the local computer in order to edit the project easier using GitHub desktop since this application enables the user to interact with the project through a GUI (Graphic User Interface) instead of a command window or an online website.
+
+### Download GitHub Desktop <a name="howtodownload"></a>
+
+Download for Windows 64 bits here: https://desktop.github.com/. Once it is installed, sign in with the following username: optica.ambiental@gmail.com. The password is contained in LiMon's logbook.
+
+### Clone the repository <a name="cloning"></a>
+
+First, a file called "Github" must be created in the local disc of the computer you are going to work with, path is suggested.
 
 
 ## Overview of the information flux for the LiMon data inversion algorithms <a name="overview"></a>
