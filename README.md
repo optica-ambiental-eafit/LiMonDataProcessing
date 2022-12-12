@@ -40,7 +40,7 @@ Select **HTTPS** option and copy the link generated below.
 <p align="center">
   <img src="https://github.com/optica-ambiental-eafit/LiMonDataProcessing/blob/main/Local%20figures/tuto_cloning2.PNG" 
    width="390" 
-   height="200" />
+   height="250" />
 </p>
 
 - Open **GitHub Desktop** in your computer and press "CTRL + Shift + O" for cloning. Select **URL** option and paste the link in the bar displayed. Then, write down the local path previously created.
