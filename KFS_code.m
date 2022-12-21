@@ -16,7 +16,7 @@
 % Meteorological data reading from standard atmosphere .TXT file:
 
 %meteo_file = 'C:\Users\paguirrea\Desktop\Práctica Pablo 2022-2\Códigos MATLAB editados por Pablo\T-P prof Standard Atmosph.txt';
-meteo_file = 'C:\Users\usuario\OneDrive - Universidad EAFIT\Códigos LIDAR pablo\T-P prof Standard Atmosph.txt';             % .TXT file path
+meteo_file = 'C:\Users\emontill\Documents\GitHub\LiMonDataProcessing\T-P prof Standard Atmosph.txt';             % .TXT file path
 meteo_file = dlmread(meteo_file, '\t', 1, 0);               % .TXT reading. Each column separated by tab
 % Reading of pressure, height and temperature columns from .TXT
 mol_pressure = (meteo_file(:, 3)) / 100;                    % [hPa]
@@ -38,16 +38,16 @@ alpha_mol = LR_mol .* beta_mol;
 
 %% Data initialization
 
-LRaer = 61;                                                             % LR for aerosols in Medellin = 61 [sr] (M.Hoyos, 2022) 
+LRaer = 61;   % LR for aerosols in Medellin = 61 [sr] (M.Hoyos, 2022) 
 
-num_of_files = size(raw_signal, 2);                           % Number of RS files
+num_of_files = size(raw_signal, 2);        % Number of RS files
 data_size = 2000;
-max_height = 20000;                                              % Maximum height [m]
+max_height = 20000;                        % Maximum height [m]
 
-R0 = floor(6375/3.75);                                             % Reference height in bins (See Rayleigh fit) (M.Hoyos, 2022)
+R0 = floor(6375/3.75);  % Reference height in bins (See Rayleigh fit) (M.Hoyos, 2022)
 data_range = 1:R0;
-mol_data_size = length(data_range);                       % Molecular data range
-trigger_delay_bins = 28;                                          % (M.Hoyos, 2022)
+mol_data_size = length(data_range);      % Molecular data range
+trigger_delay_bins = 28;                % (M.Hoyos, 2022)
 
 %% Optical products matrix definition
 

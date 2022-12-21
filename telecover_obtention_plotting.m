@@ -6,7 +6,7 @@
 %% Telecover date of measurement
 day = 27; month = 09; year = 2022;
 %root_folder = 'C:\\Users\\paguirrea\\Desktop\\Práctica Pablo 2022-2\\Códigos MATLAB editados por Pablo\\Datos para procesamiento LIDAR 2022-2_practica\\%d\\%02d\\%02d';
-root_folder = 'C:\\Users\\usuario\\OneDrive - Universidad EAFIT\\Códigos LIDAR pablo\\Datos para procesamiento\\%d\\%02d\\%02d';
+root_folder = 'C:\\Users\\emontill\\OneDrive - Universidad EAFIT\\4DAir-LidarData-TXT\\%d\\%02d\\%02d';
 path_lidar = sprintf(root_folder, year, month, day);        % in root_folder prints year,month,day as a format ( {}.format python )
 
 %% Choose date of Dark current characterization
@@ -23,10 +23,10 @@ if exist(dark_current_path)
     tmp = dir(dark_current_path);
 end
 
-tmp = dir(dark_current_path);                                                                       % dir function lists the files in the directory
-tmp=tmp(~ismember({tmp.name},{'.','..','temp.dat.txt'}));                               % dir lists 2 files by default called ('.' and '..') that we delete. 'temp.dat' created by LICEL is also deleted in this line                
+% tmp = dir(dark_current_path);                                 % dir function lists the files in the directory
+% tmp=tmp(~ismember({tmp.name},{'.','..','temp.dat.txt'}));     % dir lists 2 files by default called ('.' and '..') that we delete. 'temp.dat' created by LICEL is also deleted in this line                
 
-file_names_DC(1 : length(tmp)) = {""}; %#ok<STRSCALR>                             % Creates as many empty cells as DC files read for the selected day
+file_names_DC(1 : length(tmp)) = {""}; %#ok<STRSCALR>         % Creates as many empty cells as DC files read for the selected day
 
 
 %% Dark current filtered signal  (DC_filtered creation)
@@ -54,35 +54,35 @@ DC(1:29, :, :) = [];                                                    % DC dat
 R = 0:3.75:61315;                                                   % Height vector
 R = R';                                                                   % Transpose of height vector
 
-Q1_path = strcat(path_lidar,'\Prueba de alineacion\RS\Q1A');    % Data path
+Q1_path = strcat(path_lidar,'\TELECOVER\Q1A');    % Data path
 Q1 = open_files(Q1_path);                                                        % Execute open_files.m saved in this directory
 Q1 = mean(Q1, 2);                                                                   % Integration
 Q1(1:29, :, :) = [];                                                                      % Trigger delay correction
 Q1 = abs(Q1 - DC);                                                                  % Absolute value
 RCS_Q1 = Q1 .* R.^2;                                                               % Quadrant profile range correction
 
-Q1B_path = strcat(path_lidar,'\Prueba de alineacion\RS\Q1B');
+Q1B_path = strcat(path_lidar,'\TELECOVER\Q1B');
 Q1B = open_files(Q1B_path);
 Q1B = mean(Q1B, 2);
 Q1B(1:29, :, :) = [];
 Q1B = abs(Q1B - DC);
 RCS_Q1B = Q1B .* R.^2;
 
-Q2_path = strcat(path_lidar,'\Prueba de alineacion\RS\Q2');
+Q2_path = strcat(path_lidar,'\TELECOVER\Q2');
 Q2 = open_files(Q2_path);
 Q2 = mean(Q2, 2);
 Q2(1:29, :, :) = [];
 Q2 = abs(Q2 - DC);
 RCS_Q2 = Q2 .* R.^2;
 
-Q3_path = strcat(path_lidar,'\Prueba de alineacion\RS\Q3');
+Q3_path = strcat(path_lidar,'\TELECOVER\Q3');
 Q3 = open_files(Q3_path);
 Q3 = mean(Q3, 2);
 Q3(1:29, :, :) = [];
 Q3 = abs(Q3 - DC);
 RCS_Q3 = Q3 .* R.^2;
 
-Q4_path = strcat(path_lidar,'\Prueba de alineacion\RS\Q4');
+Q4_path = strcat(path_lidar,'\TELECOVER\Q4');
 Q4 = open_files(Q4_path);
 Q4 = mean(Q4, 2);
 Q4(1:29, :, :) = [];

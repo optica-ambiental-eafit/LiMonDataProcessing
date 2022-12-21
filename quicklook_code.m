@@ -27,7 +27,8 @@ month = 09;
 year = 2022;
 
 %root_folder = 'C:\\Users\\paguirrea\\Desktop\\Práctica Pablo 2022-2\\Códigos MATLAB editados por Pablo\\Datos para procesamiento LIDAR 2022-2_practica\\%d\\%02d\\%02d';
-root_folder = 'C:\\Users\\usuario\\OneDrive - Universidad EAFIT\\Códigos LIDAR pablo\\Datos para procesamiento\\%d\\%02d\\%02d';    % ALWAYS use double backslash ( \\ )
+%root_folder = 'C:\\Users\\usuario\\OneDrive - Universidad EAFIT\\Códigos LIDAR pablo\\Datos para procesamiento\\%d\\%02d\\%02d';    % ALWAYS use double backslash ( \\ )
+root_folder = 'C:\\Users\\emontill\\OneDrive - Universidad EAFIT\\4DAir-LidarData-TXT\\%d\\%02d\\%02d';    
 path_lidar = sprintf(root_folder, year, month, day);        % in root_folder prints year, month, day as a format ( see {}.format python )
 
 %% Raw signal (RS) directory reading and raw_signal creation
@@ -209,7 +210,7 @@ switch (user_choice)
         profile_values_0 = DC(trigger_delay_bins:end, 1, 1); profile_values_1 = DC(trigger_delay_bins:end, 1, 2);
         profile_plots(profile_values_0,profile_values_1,profile_titles,i,height,year,month,day)     % profile_plots.m is called
      
-    case 6
+    case 6                          % Only DC filtered (filtered = random values deleted)
         i = 4;
         profile_values_0 = DC_filt(trigger_delay_bins:end, 1, 1); profile_values_1 = DC_filt(trigger_delay_bins:end, 1, 2);
         profile_plots(profile_values_0,profile_values_1,profile_titles,i,height,year,month,day)     % profile_plots.m is called
