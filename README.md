@@ -176,6 +176,9 @@ which domine the equations shown in the workflow:
    height="500" />
 </p>
 
+* **BEFORE RETRIEVING $\delta^p$** you have to run KFS_code.m because you will need the variable beta_aer_CH0, created and calculated by KFS_code.m*.
+
+
 ## Telecover technique for overlap characterization <a name="telecover"></a>
 
 If the laser is misaligned, a telecover must be carried out for assuring the quality of the measurements. The code **telecover_obtention_profile.m** evaluates the signal registered when each one of the channels were covered and can be executed in the field to check if the overlap condition is satisfied.
