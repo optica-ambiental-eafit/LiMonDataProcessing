@@ -1,3 +1,7 @@
+%% CÓDIGO DE VISUALIZACIÓN ESPACIOTEMPORAL DE SEÑAL RANGOCORREGIDA.
+% Programa desarrollado por Pablo Aguirre-Alvarez en 2022-2. Aún queda pendiente trabajar en el 
+% filtrado de la señal para que los colores no saturen.
+
 clear
 clearvars
 close all
@@ -6,13 +10,13 @@ warning('off')
 
 %% Root folder definition
 
-day = 14;
-month = 07;
+day = 27;
+month = 09;
 year = 2022;
 
 %format long;
 
-root_folder = 'C:\\Users\\paguirrea\\Desktop\\Práctica Pablo 2022-2\\Códigos MATLAB editados por Pablo\\Datos para procesamiento LIDAR 2022-2_practica\\%d\\%02d\\%02d';
+root_folder = 'C:\\Users\\usuario\\OneDrive - Universidad EAFIT\\Códigos LIDAR pablo\\Datos para procesamiento\\%d\\%02d\\%02d';
 path_lidar = sprintf(root_folder, year, month, day);        % in root_folder prints year,month,day as a format ( {}.format python )
 
 
